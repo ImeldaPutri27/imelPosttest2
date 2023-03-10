@@ -42,7 +42,7 @@ Program di atas ini mengimplementasikan algoritma jump search untuk melakukan pe
 # 2. Sequential Search
 Algoritma yang digunakan pada pencarian data dibawah ini menggunakan Sequential Search. Sequential ini merupakan pencarian sederhana yang bekerja dengan cara mengecek setiap elemen pada suatu list secara berurutan.
 
-#List Data
+# List Data
 var = ["Arsel","Avivah","Daiva",["Wahyu","Wibi"]]
 
 # Pencarian Data Dengan algoritma Sequential Searching
