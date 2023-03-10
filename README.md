@@ -34,7 +34,14 @@ print("1. Arsel di index: ", var.index("Arsel"))
 print("2. Avivah di index: ", var.index("Avivah")) 
 print("3. Daiva di index: ", var.index("Daiva")) 
 print("4. Wahyu di index 3 pada kolom 0", var[3][0]) 
-print("5. Wibi di index 3 pada kolom 1", var[3][1]) 
+print("5. Wibi di index 3 pada kolom 1", var[3][1])
+
+# Hasil 
+1. Arsel di index:  0
+2. Avivah di index:  1
+3. Daiva di index:  2
+4. Wahyu di index 3 pada kolom 0 Wahyu
+5. Wibi di index 3 pada kolom 1 Wibi  
 
 # Penjelasan Cara Kerja Program dan Setiap Elemen yang dipakai
 Program di atas ini mengimplementasikan algoritma jump search untuk melakukan pencarian data pada list `var`. Fungsi `jump(arr, value)` akan menerima dua argumen yaitu list yang akan dicari dan nilai yang akan dicari. Algoritma jump search akan mencari nilai yang lebih besar dari value pada setiap langkah atau step dengan jumlah step yang ditentukan oleh variabel `step`. Langkah awal dimulai dari indeks 0 untuk kiri dan indeks `step - 1` untuk kanan. Jika nilai yang dicari berada di antara `arr[left]` dan `arr[right]`, maka pencarian selesai. Jika nilai yang dicari lebih besar dari `arr[right]`, maka akan dilanjutkan ke step berikutnya. Fungsi `var.index(value)` digunakan untuk mencari indeks dari nilai `value` pada list `var`. Sedangkan `var[3][0]` digunakan untuk me-return elemen pada indeks ke-0 dalam list yang berada pada indeks ke-3. Sedangkan `var[3][1]` digunakan untuk me-return elemen pada indeks ke-1 dalam list yang berada pada indeks ke-3.
@@ -66,7 +73,14 @@ print ("1. Arsel di index: ",search_data(var,"Arsel"))
 print ("   Avivah di index: ",search_data(var,"Avivah"))
 print ("   Daiva di index: ",search_data(var,"Daiva"))
 print ("2. Wahyu di index: ",search_data(var,"Wahyu"))
-print ("2. Wibi di index: ",search_data(var,"Wibi"))
+print ("3. Wibi di index: ",search_data(var,"Wibi"))
+
+# Hasil
+1. Arsel di index:  0
+   Avivah di index:  1    
+   Daiva di index:  2     
+2. Wahyu di index:  (3, 0)
+3. Wibi di index:  (3, 1) 
 
 # Penjelasan Cara Kerja Program dan Setiap Elemen yang dipakai
-Program di atas menggunakan algoritma sequential search untuk mencari data pada list `var`. Fungsi `search_data(data, value)` menerima dua argumen yaitu list `data` yang akan dicari dan `value` yang akan dicari. Fungsi ini akan mencari nilai `value` pada setiap elemen pada list `data` secara berurutan, dimulai dari indeks 0 hingga indeks terakhir. Jika elemen yang di cek dalam bentuk list, maka fungsi akan mengecek semua elemen pada list yang bersangkutan. Program ini mencari beberapa nilai pada list `var` menggunakan fungsi `search_data`. Jika nilai yang dicari tidak ditemukan, maka dicetak `None`
+Program di atas menggunakan algoritma sequential search untuk mencari data pada list `var`. Fungsi `search_data(data, value)` menerima dua argumen yaitu list `data` yang akan dicari dan `value` yang akan dicari. Fungsi ini akan mencari nilai `value` pada setiap elemen pada list `data` secara berurutan, dimulai dari indeks 0 hingga indeks terakhir. Jika elemen yang di cek dalam bentuk list, maka fungsi akan mengecek semua elemen pada list yang bersangkutan. Program ini mencari beberapa nilai pada list `var` menggunakan fungsi `search_data`. Jika nilai yang dicari tidak ditemukan, maka dicetak `None`.
